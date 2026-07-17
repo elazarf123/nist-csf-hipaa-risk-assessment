@@ -1,0 +1,15 @@
+function,category,category_name,score,target,evidence_summary
+GV,GV.OC,Organizational Context,2,3,Mission and patient-safety dependencies understood informally; not documented
+GV,GV.RM,Risk Management Strategy,1,3,No formal risk appetite or risk register; decisions ad hoc
+GV,GV.PO,Policy,2,3,HIPAA policies exist but last reviewed 3 years ago; no policy owner
+ID,ID.AM,Asset Management,2,4,Workstation inventory current; medical devices and cloud SaaS untracked
+ID,ID.RA,Risk Assessment,1,4,No documented HIPAA Security Risk Analysis on file - required by 164.308(a)(1)
+PR,PR.AA,Identity Mgmt & Access Control,2,4,AD/RBAC in place; deprovisioning manual; no periodic access review; MFA partial
+PR,PR.AT,Awareness & Training,2,3,Annual HIPAA training only; no phishing simulation for reset-request vishing
+PR,PR.DS,Data Security,3,4,Laptops encrypted; server backups untested for restore; no DLP on email
+PR,PR.PS,Platform Security,2,4,Patching monthly for Windows; EHR vendor appliance unpatched 14 months
+DE,DE.CM,Continuous Monitoring,1,4,EHR audit logs retained but never reviewed; no alerting on PHI access
+DE,DE.AE,Adverse Event Analysis,1,3,No defined thresholds for what constitutes a reportable anomaly
+RS,RS.MA,Incident Management,2,3,Downtime procedure exists for EHR outage; no security-specific IR plan
+RS,RS.CO,Incident Communication,1,3,Breach notification duties unassigned; 60-day HIPAA clock risk
+RC,RC.RP,Recovery Plan Execution,2,3,Backups run nightly; last restore test 18 months ago; RTO undefined
