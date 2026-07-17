@@ -1,0 +1,11 @@
+risk_id,risk_statement,likelihood,impact,score,rating,treatment,owner,csf_category,hipaa_citation
+R-01,No documented Security Risk Analysis on file,4,5,20,Critical,Mitigate,Privacy Officer,ID.RA,164.308(a)(1)(ii)(A)
+R-02,PHI access anomalies undetected - audit logs unreviewed,4,4,16,Critical,Mitigate,IT Manager,DE.CM,164.308(a)(1)(ii)(D)
+R-03,Terminated workforce member retains access,4,4,16,Critical,Mitigate,IT Manager,PR.AA,164.308(a)(3)(ii)(C)
+R-05,Unpatched EHR appliance exploited,3,5,15,Critical,Mitigate,IT Manager,PR.PS,164.308(a)(1)(ii)(B)
+R-04,Privileged account compromise - no MFA,3,4,12,High,Mitigate,IT Manager,PR.AA,164.312(d)
+R-06,Breach notification 60-day clock missed,3,4,12,High,Mitigate,Privacy Officer,RS.CO,164.404
+R-07,Backups fail restore during ransomware event,2,5,10,High,Mitigate,IT Manager,RC.RP,164.308(a)(7)(ii)
+R-08,PHI on unmanaged medical devices / SaaS,3,3,9,Medium,Mitigate,IT Manager,ID.AM,164.310(d)
+R-09,Stale unowned policies,3,3,9,Medium,Mitigate,Privacy Officer,GV.PO,164.316(b)(2)(iii)
+R-10,Service desk vishing credential reset,2,4,8,Medium,Mitigate,IT Manager,PR.AT,164.308(a)(5)
