@@ -25,6 +25,37 @@ Scorecard gap ──> HIPAA citation ──> Owned risk ──> Sequenced action
 
 Any finding that can't be walked through that chain is an observation, not a managed risk — that discipline is the difference between an assessment and a shelf document.
 
+## Assessment workflow
+
+```mermaid
+flowchart TD
+  SCOPE["Scope the environment<br/>(systems, data flows, ePHI)"] --> ASSESS
+  ASSESS["NIST CSF 2.0 assessment<br/>Govern, Identify, Protect,<br/>Detect, Respond, Recover"] --> CMMI
+  CMMI["CMMI maturity scoring<br/>(current vs. target tier)"] --> GAP
+  GAP["Gap analysis"] --> XWALK
+  XWALK["HIPAA Security Rule crosswalk<br/>(administrative, physical, technical)"] --> RISK
+  RISK["Risk register<br/>(impact x likelihood, owned)"] --> POAM
+  POAM["Phased POA and M<br/>remediation plan"] --> REPORT
+  REPORT["Executive summary<br/>(SBAR communication)"]
+```
+
+The flow is deliberately assessment-first: maturity scoring drives the gap analysis, the
+crosswalk translates gaps into regulatory exposure, and only then does remediation get
+scheduled and assigned an owner.
+
+## Privacy and security guardrails
+
+- **Fictional organization, no real client data.** The clinic, its systems, and its findings
+  are constructed for this deliverable. No real environment, vendor, or patient data appears.
+- **No ePHI in the repository.** The assessment reasons about where ePHI would live and how
+  it flows; it never contains any.
+- **Every risk has a named owner and a due date.** A risk register without accountability is
+  a list, not a control, so each entry carries an owner, treatment decision, and target date.
+- **Traceable to source frameworks.** Findings cite the specific NIST CSF 2.0 subcategory and
+  HIPAA Security Rule citation, so an auditor can follow the reasoning rather than trust it.
+- **Risk-based prioritization.** Remediation is phased by impact and likelihood rather than
+  by ease, which is what makes a POA and M defensible under audit.
+
 ## Repository structure
 
 ```
